@@ -4,7 +4,249 @@
 --main--bg-color:#1E252B;
 --main--li--p--color:color: rgba(255, 165, 55, 0.55);
 --third-family: "Roboto", sans-serif;
+--main--text--color: rgba(255, 255, 255, 0.55);
 }
+/* 
+element in list that have the same values. 
+General classes will be created here to make my work easier
+  */
 body {
   font-family: var(--font-family);
+  color: white;
+  background-color: var(--main--bg-color);
 }
+h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.78);
+}
+.list-li-item {
+  border-radius: 15px;
+  background-color: #1e252b;
+  width: 392px;
+}
+.p-list-element {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 165, 55, 0.55);
+}
+.p-list-discription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: var(--main--text--color);
+}
+.a-list-elemets-btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.container {
+  width: 1254px;
+  padding: 0 15px;
+  outline: 2px dashed red;
+  margin: 0 auto;
+}
+/*header*/
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+} 
+.header-list {
+  padding-left: 256px;  
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main--text--color);
+  gap: 45px;  /* I don`t know for sure, the header doesn`t indicate gaps  */
+}
+.header-list-signin {
+  padding-left: 192px;
+  display: flex; 
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+  font-size: 16px;  
+  gap: 68px;
+}
+/* hero section */
+h1 {
+  margin-bottom: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.9);
+}
+.main-paragraph {
+  margin-bottom: 60px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: var(--main--text--color);
+}
+form {
+  margin-bottom: 110px;
+  display: flex;
+  border-radius: 15px;
+  background-color: #283036;
+  max-width: 497px;;
+}
+.search-loop {
+  display: inline-block;
+  padding-left: 18px;
+}
+.hero-input {
+  padding-bottom: 21px;
+  padding-top: 21px;
+  padding-left: 13px;
+  border-radius: 15px;
+  border: none;
+
+  background-color: #283036;
+}
+::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38); 
+}
+.hero-button {
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+  padding-right: 36px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff6e30;
+}
+.hero-list-images {
+  display: flex;
+  gap: 19px;
+}
+.hero-list-images-item {
+  display: flex;
+}
+
+/* popular tools section */
+.popular-tools-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.tools-paragraph {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color:var(--main--text--color);
+}
+.tools-section-btn {
+  background-color: var(--main--bg-color);
+  border: none;
+}
+.second-section-list {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.div-imaage{
+  display: flex;
+}
+.div-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 126px;
+  align-content: start;
+}
+/* section tools */
+.second-section-btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff6e30;
+  background: #1e252b;
+}
+/* section newcomer tools */
+.section-tools-btn {
+  border-radius: 8px;
+  background: #ff6e30;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+/* section become a contributor */
+.last-section-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.9); 
+}
+.last-section-paragraph {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;  
+}
+.last-section-btn {
+  border-radius: 8px;
+  background: #ff6e30;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+/* footer */
+.footer-logo-paragraph{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.address-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer-paragraph {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 179%;
+  color: rgba(255, 255, 255, 0.55);
+}
+.footer-h3-titles {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);  
+}
+.text-styles-footer {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+
+
+

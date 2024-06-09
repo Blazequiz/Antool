@@ -9,306 +9,431 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- header -->
-  <header>
-    <a href="#">
-      <img src="./img/header-logo.svg" alt="header-logo">
-      antools.
-    </a>
-    <ul>
-      <li>
-        <a href="./index.html">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="./index.html">
-          Categories
-        </a>
-      </li>
-      <li>
-        <a href="./index.html">
-          My Collections
-        </a>
-      </li>
-      <li>
-        <a href="./index.html">
-          Blog
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
         <a href="#">
-          Login
+          <img src="./img/full-header-logo.svg" alt="header-logo">
+          antools.
         </a>
-      </li>
-      <li>
-        <a href="#">
-          Sign Up
-        </a>
-      </li>
-    </ul>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a href="./index.html">
+              Categories
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a href="./index.html">
+              My Collections
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a href="./index.html">
+              Blog
+            </a>
+          </li>
+        </ul>
+        <ul class="header-list-signin">
+          <li class="header-list-item-signin">
+            <a href="#">
+              Login
+            </a>
+          </li>
+          <li class="header-list-item-signin">
+            <a href="#">
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- main -->
-  <main>
+  <main class="main">
     <section class="hero-section">
-      <h1>
-        Awesome tools for <br>
-        Designer & Developer.
-      </h1>
-      <p>
-        Antool is a web collection of information on paid or <br> free Design and Development tools
-      </p>
-      <form action="search-form">
-        <label for="form-element">
-          <input type="text" name="text" placeholder="find more than 430+ tools...">
-        </label>
-        <button type="submit">
-          Search
-        </button>
-        <!-- messangers links -->
-        <ul>
-          <li><a href=""><img src="./img/facebook.svg" alt="facebook"></a></li>
-          <li><a href=""><img src="./img/instagram.svg" alt="instagram"></a></li>
-          <li><a href=""><img src="./img/twitter.svg" alt="twitter"></a></li>
-        </ul>
-      </form>
+      <div class="container">
+        <h1>
+          Awesome tools for <br>
+          Designer & Developer<span style="color: #FF6E30;">.</span>
+        </h1>
+        <p class="main-paragraph">
+          Antool is a web collection of information on paid or <br> free Design and Development tools
+        </p>
+          <form action="search-form" class="hero-form">
+            <img src="./img/search.svg" alt="search" class="search-loop">
+            <label for="form-element">
+              <input type="text" name="text" placeholder="find more than 430+ tools..." class="hero-input">
+            </label>
+            <button type="submit" class="hero-button">
+              Search
+            </button>
+        </form>
+          <!-- messangers links -->
+          <ul class="hero-list-images">
+            <li class="hero-list-images-item"><a href=""><img src="./img/facebook.svg" alt="facebook"></a></li>
+            <li class="hero-list-images-item"><a href=""><img src="./img/instagram.svg" alt="instagram"></a></li>
+            <li class="hero-list-images-item"><a href=""><img src="./img/twitter.svg" alt="twitter"></a></li>
+          </ul>
+      </div>
     </section>
     <!-- second section after hero section -->
     <section class="popular-tools">
-      <h2>
-        Most Popular Tools
-      </h2>
-      <p>Tools for the best Designers and Developers <br>
-        most popularly used in the world</p>
-        <ul>
-          <li>
-            <img src="./img/figma.svg" alt="figma"></img>
-            <h3>FIGMA</h3>
-            <p>Free</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
-          </li>
-          <li>
-            <img src="./img/sketch.svg" alt=""><!---->
-            <h3>Sketch</h3>
-            <p>Trial & Paid</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
-          </li>
-          <li>
-            <img src="./img/visual-studio-code.svg" alt="">
-            <h3>Visual Studio Code</h3>
-            <p>Free</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
-          </li>
-          <li>
-            <img src="./img/notion.svg" alt="">
-            <h3>Notion</h3>
-            <p>Free & Paid</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
-          </li>
-          <li>
-            <img src="./img/slack.svg" alt="">
-            <h3>Slack</h3>
-            <p>Free & Paid</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
-          </li>
-          <li>
-            <img src="./img/invision.svg" alt="">
-            <h3>Invision</h3>
-            <p>Free & Paid</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
+      <div class="container">
+        <h2 class="popular-tools-title">
+          Most Popular Tools
+        </h2>
+        <p class="tools-paragraph">Tools for the best Designers and Developers <br>
+          most popularly used in the world</p>
+            <ul class="second-section-list">
+              <div class=" list-li-item" style="border: 2px dashed rebeccapurple;">
+                <li class="second-section-list-item">
+                  <div class="div-image">
+                  <img src="./img/figma.svg" alt="figma"><!-- FIGMA -->
+                  </div>
+                  <div class="div-wrapper">
+                  <h3>FIGMA</h3>
+                  <p class="p-list-element">Free</p>
+                  </div>
+                  <p class="p-list-discription">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+                </li>
+                <ul class="like-and-folder-part">
+                  <li>
+                    <div>
+                      <button class="tools-section-btn">
+                        <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                      </button>
+                      <button class="tools-section-btn">
+                         <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                      </button>
+                    </div>
+                    <a href="#">Visit</a>
+                  </li>
+                </ul>
+            <li class="second-section-list-item">
+              </div>
+                  <div>
+                    <img src="./img/sketch.svg" alt="sketch"> <!--Sketch-->
+                  </div>
+              <div>
+                <h3>Sketch</h3>
+                <p>Trial & Paid</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+            </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <button type="button">
-          Load more
-        </button>
+            <li class="second-section-list-item">
+                  <div>
+                    <img src="./img/visual-studio-code.svg" alt="visual-studio-code"> <!--Visual Studio Code-->
+                  </div>  
+              <div>
+                <h3>Visual Studio Code</h3>
+                <p>Free</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+            </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+            <li class="second-section-list-item">
+              <div>
+                <img src="./img/notion.svg" alt="notion"> <!--Notion-->
+              </div> 
+              <div>
+                <h3>Notion</h3>
+                <p>Free & Paid</p>
+              </div>
+            </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+            <li class="second-section-list-item">
+               <img src="./img/slack.svg" alt="slack">  <!--Slack-->
+              <div>
+                <h3>Slack</h3>
+                <p>Free & Paid</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+            </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+            <li class="second-section-list-item">
+             <div>
+              <img src="./img/invision.svg" alt="invision"> <!--Invision-->
+             </div> 
+              <div>
+                <h3>Invision</h3>
+                <p>Free & Paid</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+            </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+          </ul>
+          <button type="button" class="second-section-btn">
+            Load more
+          </button>
+      </div>
     </section>
     <!-- section about brands -->
-    <section>
-      <h2>Trusted more than 150+ brand</h2>
-      <ul>
-       <li><img src="./img/logos_microsoft.svg" alt="microsoft"></li>  <!-- Microsoft image -->
-        <li><img src="./img/logos_google.svg" alt="google"></li> <!-- Google image -->
-        <li><img src="./img/logos_slack.svg" alt="slack"></li> <!-- Slack image -->
-        <li><img src="./img/logos_wordpress.svg" alt="wordpress"></li> <!-- WordPress image -->
-      </ul>
+    <section class="section-about">
+      <div class="container">
+        <h2>Trusted more than 150+ brand</h2>
+        <ul class="section-about-list">
+         <li class="section-about-list-item"><img src="./img/logos_microsoft.svg" alt="microsoft"></li>  <!-- Microsoft image -->
+          <li class="section-about-list-item"><img src="./img/logos_google.svg" alt="google"></li> <!-- Google image -->
+          <li class="section-about-list-item"><img src="./img/logos_slack.svg" alt="slack"></li> <!-- Slack image -->
+          <li class="section-about-list-item"><img src="./img/logos_wordpress.svg" alt="wordpress"></li> <!-- WordPress image -->
+        </ul>
+      </div>
     </section>
     <!-- section newcomer tools -->
-    <section>
-      <h2>Newcomer Tools</h2>
-      <p> Wow! see the latest update of the most <br> recommended tools from reliable designers <br> and developers</p>
-      <button type="button">Explore more</button>
-      <ul>
-        <li>
-           <img src="./img/zeplin.svg" alt=""></img>  <!--Zeplin-->
-          <h3>Zeplin</h3>
-          <p>Free & Paid</p>
-          <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-          <button>
-            <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-          </button>
-          <button>
-             <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-          </button>
-          <a href="#">Visit</a>
-        </li>
-        <li>
-          <img src="./img/phpstorm.svg" alt=""> <!--PHPStorm-->
-          <h3>PHPStorm</h3>
-          <p>Free</p>
-          <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-          <button>
-            <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-          </button>
-          <button>
-             <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-          </button>
-          <a href="#">Visit</a>
-        </li>
-        <ul>
-          <li>
-            <img src="./img/toolbox.svg" alt=""></img> <!--Toolbox-->
-            <h3>Toolbox</h3>
-            <p>Free</p>
+    <section class="section-tools">
+      <div class="container"> 
+        <h2 class="section-newcomer-title">Newcomer Tools</h2>
+        <p> Wow! see the latest update of the most <br> recommended tools from reliable designers <br> and developers</p>
+        <button type="button" class="section-tools-btn">Explore more</button>
+        <ul class="section-tools-list">
+          <li class="section-tools-list-item">
+             <img src="./img/zeplin.svg" alt="zeplin"><!--Zeplin--> <!--class="img wrapper"-->
+            <div>
+            <h3>Zeplin</h3>
+            <p>Free & Paid</p>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
           </li>
-          <li>
-            <img src="./img/procreate.svg" alt=""> <!--Procreate-->
-            <h3>Procreate</h3>
-            <p>Paid</p>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+          <li class="section-tools-list-item">
+            <div>
+              <img src="./img/phpstorm.svg" alt="phpstorm"> <!--PHPStorm--> <!--class="img wrapper"-->
+            </div>
+            <div>
+              <h3>PHPStorm</h3>
+              <p>Free</p>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
-            <button>
-              <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
-            </button>
-            <button>
-               <img src="./img/folder.svg" alt="folder"> <!--folder image-->
-            </button>
-            <a href="#">Visit</a>
           </li>
-        </ul>
-          <img src="" alt="">
+          <ul>
+            <li>
+              <div>
+                <button class="tools-section-btn">
+                  <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                </button>
+                <button class="tools-section-btn">
+                   <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                </button>
+              </div>
+              <a href="#">Visit</a>
+            </li>
+          </ul>
+            <li class="section-tools-list-item">
+              <div>
+                <img src="./img/toolbox.svg" alt="toolbox"><!--Toolbox--> <!--class="img wrapper"-->
+              </div>
+              <div>
+                <h3>Toolbox</h3>
+                <p>Free</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+          </li>
+            <ul>
+              <li>
+                <div>
+                  <button class="tools-section-btn">
+                    <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                  </button>
+                  <button class="tools-section-btn">
+                     <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  </button>
+                </div>
+                <a href="#">Visit</a>
+              </li>
+            </ul>
+            <li class="section-tools-list-item">
+             <div>
+              <img src="./img/procreate.svg" alt="procreate"><!--Procreate--> <!--class="img wrapper"-->
+             </div>
+              <div>
+              <h3>Procreate</h3>
+                <p>Paid</p>
+              </div>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+              </li>
+              <ul>
+                <li>
+                  <div>
+                    <button class="tools-section-btn">
+                      <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                    </button>
+                    <button class="tools-section-btn">
+                       <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                    </button>
+                  </div>
+                  <a href="#">Visit</a>
+                </li>
+              </ul>
+          </ul>
+      </div>
+      </section>
+        <!-- coming soon -->
+         <!-- <section class="section-ronald-richers">
+          <button></button>
+          <div class="RonaldRichards">
+            <img src="./img/ronald-richers.svg" alt="ronald-richers">
           <h3>Ronald Richards</h3>
           <p>Product Manager</p>
-    </section>
+          </div>
+          <button></button>
+         </section>
+    </section> -->
+        <!-- coming soon -->
+
       <!-- section become a contributor -->
-      <section>
-        <h2>Become a contributor?</h2>
-        <p>Join us and get tips & tricks to become a great <br> Designer and Developer</p>
-        <form action="join-form">
-          <label for="email">
-            <input type="email" name="email" placeholder="Enter your email..">
-          </label>
-          <button type="button">
-            Join Us
-          </button>
-        </form>
+      <section class="last-section">
+        <div class="container">
+          <h2 class="last-section-title">Become a contributor?</h2>
+          <p class="last-section-paragraph">Join us and get tips & tricks to become a great <br> Designer and Developer</p>
+          <form action="join-form" class="last-section-form">
+            <label for="email">
+              <input type="email" name="email" placeholder="Enter your email.." class="last-input">
+            </label>
+            <button type="button" class="last-section-btn">
+              Join Us
+            </button>
+          </form>
+        </div>
       </section>
+    </main>
       <!-- footer -->
-      <footer>
-        <a href="">
-          <img src="" alt="">  <!--footer logo -->
-          <p>antools.</p>
-        </a> 
-        <h3>Copyright 2021. Antools</h3>
-        <p>Antool is a web collection of <br> information on paid or free Design <br> and Development tools</p>
-        <ul>
-        <ul>
-          <h3>Contact Us</h3>
-          <li>
-            <li>
-              <a href="tel:+380961111111" class="footer-adress-contacts">+621987463</a>
+      <footer class="footer">
+        <div class="container">
+          <a href="./index.html">
+            <img src="./img/footer-logo.svg" alt="antools-footer-logo" class="footer-logo">  <!--footer logo -->
+            <p class="footer-logo-paragraph">antools.</p>
+          </a> 
+          <h3 class="address-title">Copyright 2021. Antools</h3>
+          <p class="footer-paragraph">Antool is a web collection of <br> information on paid or free Design <br> and Development tools</p>
+          <!-- footer list -->
+          <ul class="footer-list">
+          <ul class="footer-contain-list">
+            <h3 class="footer-h3-titles">Contact Us</h3>
+              <li class="footer-contain-list-item">
+                <a href="tel:+380961111111" class="footer-adress-contacts text-styles-footer">+621987463</a>
+              </li>
+              <li class="footer-contain-list-item">
+                <a href="mailto:info@devstudio.com" class="text-styles-footer">info@devstudio.com</a>
+              </li>
+              <li class="footer-contain-list-item">
+              <address class="text-styles-footer">
+                  M Building, No.10 A
+              </address>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="footer-second-list">
+            <h3 class="footer-h3-titles">Categories</h3>
+            <li class="footer-second-list=item">
+              <a href="#" class="text-styles-footer">Design</a>
             </li>
-            <address>
-                M Building, No.10 A
-            </address>
-          </li>
-          <h3>Categories</h3>
-          <li>
-            <a href="">Design</a>
-          </li>
-          <li>
-            <a href="">Development</a>
-          </li>
+            <li class="footer-second-list=item">
+              <a href="#" class="text-styles-footer">Development</a>
+            </li>
+          </ul>
+            <ul class="footer-third-list">
+              <h3 class="footer-h3-titles">
+                Company Info
+              </h3>
+            <li class="footer-third-list-item">
+              <a href="#" class="text-styles-footer">
+                About Us
+              </a>
+            </li>
+             <li class="footer-third-list-item">
+              <a href="#" class="text-styles-footer">
+                Our Partners
+              </a>
+             </li>
+              <li class="footer-third-list-item">
+                <a href="#" class="text-styles-footer">
+                  Blog
+                </a>  
+              </li>
+            </li>
+          </ul>
         </ul>
-          <ul>
-            <h3>
-              Company Info
-            </h3>
-          <li>
-            <a href="">
-              About Us
-            </a>
-          </li>
-           <li>
-            <a href="">
-              Our Partners
-            </a>
-           </li>
-            <li>
-              <a href="">
-                Blog
-              </a>  
-            </li>
-          </li>
-        </ul>
-      </ul>
+        </div>
       </footer>
-  </main>
 </body>
 </html>
