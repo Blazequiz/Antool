@@ -24,7 +24,7 @@ h3 {
 .list-li-item {
   border-radius: 15px;
   background-color: #1e252b;
-  width: 392px;
+  flex-basis: calc(1224px / 30px)*6;
 }
 .li-list-newcomer-tools {
   width: 288px;
@@ -176,9 +176,12 @@ form {
   background-color: var(--main--bg-color);
   border: none;
 }
-.second-section-list {
+.second-list-section {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
 .second-section-btn {
   padding: 17px 38px;
   border: 1px solid rgba(255, 255, 255, 0.1);
