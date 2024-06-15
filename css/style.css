@@ -105,7 +105,7 @@ form {
   align-items: center;
   border-radius: 15px;
   background-color: #283036;
-  max-width: 497px;;
+  max-width: 497px;
 }
 .search-loop {
   display: inline-block;
@@ -191,9 +191,6 @@ form {
 .p-list-discription {
   margin-bottom: 30px;
 }
-.hero-button {
-
-}
 .like {
   margin-right: 20px;
 }
@@ -235,13 +232,35 @@ form {
 }
 
 /* section newcomer tools */
-.section-tools-btn {
-  border-radius: 8px;
-  background: #ff6e30;
+
+.last-input {
+  padding-bottom: 21px;
+  padding-top: 21px;
+  padding-left: 13px;
+  border-radius: 15px;
+  border: none;
+  background-color: #283036;
+}
+::placeholder {
   font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38); 
+}
+.last-section-btn  {
+  margin-left: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+  padding-right: 36px;
+  border-radius: 8px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
   color: #fff;
+  background-color: #ff6e30;
 }
 .section-newcomer-title {
   font-family: var(--font-family);
@@ -261,6 +280,11 @@ form {
   border-radius: 8px;
   border: none;
   padding: 16px 40px;
+  background: #ff6e30;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
 }
 .section-tools-list {
   display: flex;
