@@ -26,6 +26,11 @@ h3 {
   background-color: #1e252b;
   width: 392px;
 }
+.li-list-newcomer-tools {
+  width: 288px;
+  height: 284px;
+  border-radius: 15px;
+}
 .p-list-element {
   font-family: var(--font-family);
   font-weight: 400;
@@ -74,7 +79,10 @@ h3 {
   gap: 68px;
 }
 /* hero section */
-h1 {
+.hero-section{
+  margin-top: 104px;
+}
+h1 { 
   margin-bottom: 30px;
   font-family: var(--font-family);
   font-weight: 500;
@@ -91,8 +99,10 @@ h1 {
   color: var(--main--text--color);
 }
 form {
+  padding: 8px 12px 8px 16px;
   margin-bottom: 110px;
   display: flex;
+  align-items: center;
   border-radius: 15px;
   background-color: #283036;
   max-width: 497px;;
@@ -122,6 +132,7 @@ form {
   padding-bottom: 10px;
   padding-left: 36px;
   padding-right: 36px;
+  border-radius: 8px;
   border: none;
   border-radius: 8px;
   font-family: var(--font-family);
@@ -139,6 +150,9 @@ form {
 }
 
 /* popular tools section */
+.popular-tools {
+  margin-top: 200px;
+}
 .popular-tools-title {
   text-align: center;
   font-family: var(--font-family);
@@ -154,22 +168,52 @@ form {
   line-height: 167%;
   color:var(--main--text--color);
 }
+.like-and-folder-part {
+  display: flex;
+  align-items: center;
+}
 .tools-section-btn {
   background-color: var(--main--bg-color);
   border: none;
 }
 .second-section-list {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
 }
-.div-imaage{
+.second-section-btn {
+  padding: 17px 38px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff6e30;
+}
+.p-list-discription {
+  margin-bottom: 30px;
+}
+.hero-button {
+
+}
+.like {
+  margin-right: 20px;
+}
+.visit-list-link {
+  margin-left: 124px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: var(--main--text--color);
+}
+.div-image{
+  margin-bottom: 30px;
   display: flex;
 }
 .div-wrapper {
+  margin-left: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  margin-left: 126px;
-  align-content: start;
 }
 /* section tools */
 .second-section-btn {
@@ -181,6 +225,15 @@ form {
   color: #ff6e30;
   background: #1e252b;
 }
+/* section about */
+.section-about-list {
+  padding: 150px 59px 82px;
+  display: flex;
+  border-radius: 25px;
+  background: rgba(44, 53, 61, 0.2);
+  gap: 107px;
+}
+
 /* section newcomer tools */
 .section-tools-btn {
   border-radius: 8px;
@@ -190,6 +243,31 @@ form {
   font-size: 18px;
   color: #fff;
 }
+.section-newcomer-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.9);
+}
+.newcomer-paragraph {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color: rgba(255, 255, 255, 0.55);
+}
+.section-tools-btn {
+  border-radius: 8px;
+  border: none;
+  padding: 16px 40px;
+}
+.section-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 /* section become a contributor */
 .last-section-title {
   font-family: var(--font-family);
@@ -204,6 +282,7 @@ form {
   font-size: 18px;
   line-height: 167%;  
 }
+
 .last-section-btn {
   border-radius: 8px;
   background: #ff6e30;
@@ -212,6 +291,7 @@ form {
   font-size: 16px;
   color: #fff;
 }
+
 /* footer */
 .footer-logo-paragraph{
   font-family: var(--font-family);
