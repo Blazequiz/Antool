@@ -57,7 +57,10 @@ h3 {
   margin: 0 auto;
 }
 /*header*/
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 58px;
+}
 .header-nav {
   display: flex;
   align-items: flex-end;
@@ -80,8 +83,8 @@ h3 {
   gap: 68px;
 }
 /* hero section */
-.hero-section{
-  margin-top: 104px;
+.hero-section {
+  padding-top: 46px;
 }
 h1 { 
   margin-bottom: 30px;
@@ -234,12 +237,28 @@ form {
   background: #1e252b;
 }
 /* section about */
-.section-about-list {
-  padding: 150px 59px 82px;
-  display: flex;
+.container-about-styles {
+  padding: 56px 82px;
   border-radius: 25px;
-  background: rgba(44, 53, 61, 0.2);
+  justify-content: center;
   gap: 107px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(44, 53, 61, 0.2),
+    rgba(44, 53, 61, 0.2)
+  ), radial-gradient(circle at top left, rgba(255, 72, 66, 0.4) 1%, transparent 9%);
+}
+.section-about-list {
+  display: flex;
+  gap: 106px;
+}
+.section-about-title {
+  margin-bottom: 55px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* section newcomer tools */
