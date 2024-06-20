@@ -369,11 +369,11 @@ form {
   display: flex;
 }
 .section_with_men-img {
-  background: radial-gradient(
-  rgba(0, 0, 0, 0.8) 0%, 
-  rgba(0, 0, 0, 0.6) 40%, 
-  rgba(0, 0, 0, 0.2) 70%, 
-  rgba(0, 0, 0, 0) 100%);
+  margin-right: 56px;
+}
+.section-ronald-richers-btn {
+  background-color: transparent;
+  border: none;
 }
 .slider-color-orange  {
   background-color: #ff6e30;;
@@ -460,7 +460,7 @@ form {
 .footer {
   border: 0.50px solid rgba(255, 255, 255, 0.15);
 }
-.footer-logo-paragraph{
+.footer-logo-paragraph {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 22px;
@@ -512,6 +512,14 @@ form {
   display: flex;
   align-items: center;
 }
+.footer-contain-list,
+.footer-second-list,
+.footer-third-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
 
 
 
