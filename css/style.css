@@ -60,6 +60,9 @@ h3 {
   display: flex;
   align-items: flex-end;
 } 
+.logo-img {
+  margin-right: 20px;
+}
 .header-list {
   margin-left: 256px;
   display: flex;
@@ -106,14 +109,12 @@ form {
   background-color: #283036;
   max-width: 497px;
 }
-.search-loop {
-  display: inline-block;
-  padding-left: 18px;
-}
+/* .search-loop {
+
+} */
 .hero-input {
-  padding-bottom: 21px;
-  padding-top: 21px;
-  padding-left: 13px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   border-radius: 15px;
   border: none;
 
@@ -142,10 +143,14 @@ form {
 }
 .hero-list-images {
   display: flex;
-  gap: 19px;
+  gap: 8px;
 }
 .hero-list-images-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
 }
 
 /* popular tools section */
@@ -197,7 +202,8 @@ form {
 
 /* hovers end */
 .second-section-btn {
-  margin-left: 520px;
+  margin: 0 auto;
+  display: block;
   padding: 17px 38px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -258,7 +264,7 @@ form {
 }
 .section-about-list {
   display: flex;
-  gap: 106px;
+  justify-content: space-between;
 }
 .section-about-title {
   margin-bottom: 55px;
@@ -331,7 +337,6 @@ form {
   width: 600px;
 }
 .section-tools-list {
-  margin-left: 196px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -342,8 +347,15 @@ form {
 }
 .ul-tools-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 /* Ronald Richers */
+.men_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
 .section_with_men-button-list {
   display: flex;
   gap: 18px;
@@ -402,6 +414,15 @@ form {
   color: rgba(255, 255, 255, 0.9); 
   text-align: center;
 }
+.last-section-form {
+  padding: 12px 12px 8px 16px;
+  margin-bottom: 110px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #283036;
+  width: 549px;
+}
 .last-section-paragraph {
   margin-bottom: 100px;
   font-family: var(--font-family);
@@ -429,11 +450,16 @@ form {
   border: 0.50px solid rgba(255, 255, 255, 0.15);
 }
 .footer-logo-paragraph{
-  margin-bottom: 25px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 22px;
   color: rgba(255, 255, 255, 0.9);
+}
+.a-footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 12px;
 }
 .address-title {
   margin-bottom: 21px;
