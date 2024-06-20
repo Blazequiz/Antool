@@ -84,6 +84,10 @@ h3 {
   padding-top: 46px;
   margin-bottom: 181px;
 }
+.hero-lsit-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 h1 { 
   margin-bottom: 30px;
   font-family: var(--font-family);
@@ -350,7 +354,7 @@ form {
   justify-content: space-between;
 }
 /* Ronald Richers */
-.men_flex {
+.man_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -363,6 +367,13 @@ form {
 }
 .section_with_men-wraper {
   display: flex;
+}
+.section_with_men-img {
+  background: radial-gradient(
+  rgba(0, 0, 0, 0.8) 0%, 
+  rgba(0, 0, 0, 0.6) 40%, 
+  rgba(0, 0, 0, 0.2) 70%, 
+  rgba(0, 0, 0, 0) 100%);
 }
 .slider-color-orange  {
   background-color: #ff6e30;;
