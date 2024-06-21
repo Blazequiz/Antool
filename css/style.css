@@ -27,6 +27,7 @@ h3 {
   border-radius: 15px;
 }
 .p-list-element {
+  margin-top: 4px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -81,12 +82,12 @@ h3 {
 }
 /* hero section */
 .hero-section {
-  padding-top: 46px;
-  margin-bottom: 181px; 
-  background-image: url(../img/hero-image.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+    padding-top: 46px;
+    margin-bottom: 181px; 
+    background-image: url(../img/hero-image.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 300px) top; 
+    background-size: contain; 
 }
 .hero-lsit-wrapper {
   display: flex;
@@ -287,8 +288,8 @@ form {
   margin-bottom: 189px;
 }
 .last-input {
-  padding-bottom: 21px;
-  padding-top: 21px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   padding-left: 13px;
   border-radius: 15px;
   border: none;
