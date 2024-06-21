@@ -82,7 +82,11 @@ h3 {
 /* hero section */
 .hero-section {
   padding-top: 46px;
-  margin-bottom: 181px;
+  margin-bottom: 181px; 
+  background-image: url(../img/hero-image.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .hero-lsit-wrapper {
   display: flex;
