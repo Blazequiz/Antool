@@ -49,7 +49,7 @@ h3 {
 .container {
   width: 1254px;
   padding: 0 15px;
-  outline: 2px dashed red;
+  /* outline: 2px dashed red; */
   margin: 0 auto;
 }
 /*header*/
@@ -188,12 +188,14 @@ form {
   align-items: center;
 }
 .tools-section-btn-folder {
-  background-color: var(--main--bg-color);
+  background-color: transparent;
   border: none;
+  color: transparent;
 }
 .tools-section-btn-like {
-  background-color: var(--main--bg-color);
+  background-color: transparent;
   border: none;
+  color: transparent;
 }
 .second-list-section {
     display: flex;
@@ -208,6 +210,32 @@ form {
     padding: 32px;
 }
 /* hovers */
+/* section tools */
+.second-section-list-item:hover {
+  border-radius: 15px;
+  background-image: 
+    linear-gradient(to right, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6)), 
+    radial-gradient(circle at top right, rgba(255, 110, 48, 0.6) 1%, transparent 20%);
+}
+.second-section-list-item:hover .visit-list-link {
+  background-color: #FF6E30;
+  padding:9px 35px;
+  border-radius: 8px;
+  color: #fff;
+}
+/* section newcomer tools */
+.section-tools-list-item:hover {
+  border-radius: 15px;
+  background-image: 
+    linear-gradient(to right, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6)), 
+    radial-gradient(circle at top right, rgba(255, 110, 48, 0.6) 1%, transparent 20%);
+}
+/* .section-tools-list-item:hover .visit-list-link {
+  background-color: #FF6E30;
+  padding: 9px 35px;
+  border-radius: 8px;
+  color: #fff;
+} */
 
 /* hovers end */
 .second-section-btn {
