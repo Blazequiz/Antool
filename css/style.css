@@ -536,6 +536,7 @@ form {
   padding-top: 70px;
 }
 .footer-list {
+  margin-bottom: 98px;
   display: flex;
   gap: 115px;
   justify-content: center;
