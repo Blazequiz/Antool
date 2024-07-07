@@ -118,6 +118,12 @@ form {
   background-color: #283036;
   max-width: 497px;
 }
+.hero-list-svg-item {
+  fill: #fff;
+}
+.hero-list-images .hero-list-svg-item:hover {
+  fill: #FF6E30;
+}
 /* .search-loop {
 
 } */
@@ -195,7 +201,6 @@ form {
 .tools-section-btn-like {
   background-color: transparent;
   border: none;
-  color: transparent;
 }
 .second-list-section {
     display: flex;
@@ -208,6 +213,9 @@ form {
 {
     width: calc((100% - 48px) / 3);
     padding: 32px;
+}
+.tools-section-btn-like-svg {
+  fill: rgba(255, 255, 255, 0.38);
 }
 /* hovers */
 /* section tools */
@@ -405,7 +413,6 @@ form {
   margin-right: 56px;
 }
 .section-ronald-richers-btn {
-  background-color: transparent;
   border: none;
 }
 .slider-color-orange  {
@@ -444,7 +451,11 @@ form {
   justify-content: flex-end;
   align-items: center;
 }
-
+.left-arrow {
+  stroke-width: 3px;
+  stroke: rgba(255, 255, 255, 0.28);
+  fill: rgba(255, 255, 255, 0.28);
+}
 /* section become a contributor */
 .last-section {
   margin-bottom: 261px;
