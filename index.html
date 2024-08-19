@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antools</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
@@ -13,16 +18,16 @@
 </head>
 <body>
   <!-- header -->
-  <header class="header">
+  <header class="header" id="#top">
     <div class="container">
       <nav class="header-nav">
-        <a href="#">
+        <a href="#" class="animate__animated animate__flash">
           <img src="./img/full-header-logo.svg" alt="header-logo" class="logo-img">
           antools.
         </a>
         <ul class="header-list">
           <li class="header-list-item">
-            <a href="./index.html">
+            <a href="#contacts" >
               Home
             </a>
           </li>
@@ -44,11 +49,11 @@
         </ul>
         <ul class="header-list-signin">
           <li class="header-list-item-signin">
-            <a href="#" class="header-signin-list-element">
+            <a href="#" class="header-signin-list-element-first">
               Login
             </a>
           </li>
-          <li class="header-list-item-signin">
+          <li class="header-list-item-signin-first">
             <a href="#" class="header-signin-list-element">
               Sign Up
             </a>
@@ -81,9 +86,9 @@
             </form>
               <!-- messangers links -->
               <ul class="hero-list-images">
-                <li class="hero-list-images-item"><a href="https://www.facebook.com/" target="_blank"><svg width="36" height="36" class="hero-list-svg-item"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-                <li class="hero-list-images-item"><a href="https://www.instagram.com/" target="_blank"><svg width="36" height="36" class="hero-list-svg-item"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-                <li class="hero-list-images-item"><a href="https://x.com/home?lang-en=" target="_blank"><svg width="36" height="36" class="hero-list-svg-item"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                <li class="hero-list-images-item"><a href="https://www.facebook.com/" target="_blank"><svg width="36" height="36" class="hero-list-svg-item keyframes-first"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                <li class="hero-list-images-item"><a href="https://www.instagram.com/" target="_blank"><svg width="36" height="36" class="hero-list-svg-item keyframes-second"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                <li class="hero-list-images-item"><a href="https://x.com/home?lang-en=" target="_blank"><svg width="36" height="36" class="hero-list-svg-item keyframes-third"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg></a></li>
               </ul>
             </li>
             <!-- <li>
@@ -101,6 +106,7 @@
           most popularly used in the world
         </p>
         <ul class="second-list-section">
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/figma.svg" alt="figma" class="img-popular-tools-hover"><!-- FIGMA -->
@@ -115,12 +121,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                <svg width="28" height="28" class="tools-section-btn-like-svg"><use href="./img/symbol-defs.svg#icon-like"></use></svg> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <svg width="28" height="28" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -128,6 +136,7 @@
               </li>
             </ul>
           </li>
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/sketch.svg" alt="sketch"><!-- Sketch -->
@@ -142,12 +151,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                  <img src="./img/heart.svg" alt="like"> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -155,6 +166,7 @@
               </li>
             </ul>
           </li>
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/visual-studio-code.svg" alt="visual-studio-code"><!-- VS code -->
@@ -169,12 +181,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                  <img src="./img/heart.svg" alt="like"> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -182,6 +196,7 @@
               </li>
             </ul>
           </li>
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/notion.svg" alt="notion"><!-- Notion -->
@@ -196,12 +211,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                  <img src="./img/heart.svg" alt="like"> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -209,6 +226,7 @@
               </li>
             </ul>
           </li>
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/slack.svg" alt="slack"><!-- Slack -->
@@ -223,12 +241,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                  <img src="./img/heart.svg" alt="like"> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -236,6 +256,7 @@
               </li>
             </ul>
           </li>
+          <!--  -->
           <li class="second-section-list-item list-li-item">
             <div class="div-image">
               <img src="./img/invision.svg" alt="invision"><!-- Invision -->
@@ -250,12 +271,14 @@
             <ul class="like-and-folder-part">
               <li>
                 <button class="tools-section-btn-like">
-                  <img src="./img/heart.svg" alt="like"> <!--heart-image-->
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                  </svg><!--heart-image-->
                 </button>
               </li>
               <li>
                 <button class="tools-section-btn-folder">
-                  <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                  <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                 </button>
               </li>
               <li>
@@ -263,11 +286,11 @@
               </li>
             </ul>
           </li>
+          <!--  -->
         </ul>
         <button type="button" class="second-section-btn">Load more</button>
       </div>
     </section>
-    
     <!-- section about brands -->
     <section class="section-about ">
       <div class="container container-about-styles">
@@ -289,7 +312,7 @@
           <li>
             <h2 class="section-newcomer-title ">Newcomer Tools</h2>
             <p class="newcomer-title"> Wow! see the latest update of the most <br> recommended tools from reliable designers <br> and developers</p>
-            <button type="button" class="section-tools-btn">Explore more</button>
+            <div data-aos="flip-up"><button type="button" class="section-tools-btn">Explore more</button></div>
           </li>
           <li>
             <ul class="section-tools-list special-container">
@@ -305,16 +328,18 @@
                 <ul class="like-and-folder-part">
                   <li>
                     <button class="tools-section-btn-like">
-                      <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                      </svg><!--heart-image-->
                     </button>
                   </li>
                   <li>
                     <button class="tools-section-btn-folder">
-                      <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                      <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                     </button>
                   </li>
                   <li>
-                    <a href="#" class="visit-list-link">Visit</a>
+                    <a href="#" class="visit-second-tools-list-link">Visit</a>
                   </li>
                 </ul>
               </li>
@@ -331,16 +356,18 @@
                 <ul class="like-and-folder-part">
                   <li>
                     <button class="tools-section-btn-like">
-                      <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                      </svg><!--heart-image-->
                     </button>
                   </li>
                   <li>
                     <button class="tools-section-btn-folder">
-                      <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                      <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                     </button>
                   </li>
                   <li>
-                    <a href="#" class="visit-list-link">Visit</a>
+                    <a href="#" class="visit-second-tools-list-link">Visit</a>
                   </li>
                 </ul>
               </li>
@@ -357,16 +384,18 @@
                 <ul class="like-and-folder-part">
                   <li>
                     <button class="tools-section-btn-like">
-                      <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                      </svg><!--heart-image-->
                     </button>
                   </li>
                   <li>
                     <button class="tools-section-btn-folder">
-                      <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                      <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                     </button>
                   </li>
                   <li>
-                    <a href="#" class="visit-list-link">Visit</a>
+                    <a href="#" class="visit-second-tools-list-link">Visit</a>
                   </li>
                 </ul>
               </li>
@@ -383,19 +412,20 @@
                 <ul class="like-and-folder-part">
                   <li>
                     <button class="tools-section-btn-like">
-                      <img src="./img/heart.svg" alt="like"> <!--heart-imge-->
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path class="like-svg" d="M19.8334 5.25C17.3834 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16669 5.25C4.31669 5.25 1.16669 8.4 1.16669 12.25C1.16669 19.1917 14 26.25 14 26.25C14 26.25 26.8334 19.25 26.8334 12.25C26.8334 8.4 23.6834 5.25 19.8334 5.25Z" fill="white" fill-opacity="0.38" />
+                      </svg><!--heart-image-->
                     </button>
                   </li>
                   <li>
                     <button class="tools-section-btn-folder">
-                      <img src="./img/folder.svg" alt="folder"> <!--folder image-->
+                      <svg width="30" height="30" class="tools-section-btn-folder-svg"><use href="./img/symbol-defs.svg#icon-folder"></use></svg> <!--folder image-->
                     </button>
                   </li>
                   <li>
-                    <a href="#" class="visit-list-link">Visit</a>
+                    <a href="#" class="visit-second-tools-list-link">Visit</a>
                   </li>
-          </ul>
-  
+                </ul>
           </li>
       </ul>
           </div>
@@ -404,7 +434,9 @@
         <section class="section_with_men">
           <div class="container">
           <div class="man_flex">
-          <div class="ronald-richers-btn-wrapper"><button class="section-ronald-richers-btn"><svg width="48" height="48" class="left-arrow"><use href="./img/symbol-defs.svg#icon-chevron-left"></use></svg></button></div>
+          <div class="ronald-richers-btn-wrapper"><button class="section-ronald-richers-btn"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 36L18 24L30 12" stroke="white" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg></button></div>
           <div class="section_with_men-wraper">
           <img src="./img/ronaldrichers-grouped-images.svg" alt="man_with_text" class="section_with_men-img" />
           <p class="section_with_men-description">
@@ -415,7 +447,9 @@
           Occaecat aute officia excepteur <br> non laboris id qui ad.
           </p>
           </div>
-          <div class="ronald-richers-second-button-wrapper"><button class="section-ronald-richers-btn"><svg width="48" height="48" class="right-arrow"><use href="./img/symbol-defs.svg#icon-chevron-right"></use></svg></button></div>
+          <div class="ronald-richers-second-button-wrapper"><button class="section-ronald-richers-btn"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 36L30 24L18 12" stroke="#FF6E30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg></button></div>
           </div>
           <ul class="section_with_men-button-list ">
           <li class="section_with_men-button-list-item-gray slider-color-gray"></li>
@@ -443,7 +477,7 @@
       </section>
     </main>
       <!-- footer -->
-      <footer class="footer">    
+      <footer class="footer" id="contacts">    
         <div class="container">
           <div class="footer-wrapper" style="display: flex; justify-content: space-between;">
               <!-- First Block: Logo and Information -->
@@ -504,5 +538,14 @@
             </div>
           </div>
         </footer> 
+        <a class="scroll-to-top" href="#top">
+          <svg class="icon icon-arrow-up" viewBox="0 0 26 28" width="20" height="20">
+          <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
+        </svg>
+      </a>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

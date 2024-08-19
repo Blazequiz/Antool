@@ -6,6 +6,12 @@
 --third-family: "Roboto", sans-serif;
 --main--text--color: rgba(255, 255, 255, 0.55);
 }
+button {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
 /* 
 element in list that have the same values. 
 General classes will be created here to make my work easier
@@ -59,7 +65,8 @@ h3 {
 }
 .header-nav {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
 } 
 .logo-img {
   margin-right: 20px;
@@ -72,13 +79,58 @@ h3 {
   color: var(--main--text--color);
   gap: 45px;  /* I don`t know for sure, the header doesn`t indicate gaps  */
 }
-.header-list-signin {
-  padding-left: 192px;
+.header-list-signin { 
   display: flex; 
   color: rgba(255, 255, 255, 0.78);
   font-weight: 600;
   font-size: 16px;  
-  gap: 68px;
+  gap: 41px;
+  border: 2px solid transparent;
+  transition: color 500ms ease;
+}
+.header-signin-list-element {
+  padding: 12px 28px;
+  background-color: #FF6E30;
+  border-radius: 8px;
+  color: #FDF5FF;
+  border: 1px solid #FF6E30;
+  transition: background-color 500ms ease-in-out;
+}
+.header-list-item   {
+  transition: color 500ms ease;
+}
+.header-list-item:hover {
+  transition: color 500ms ease;
+  color: #FF6E30;  
+}
+.header-list-item-signin-first {
+  animation-name: scale;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.header-list-item-signin:hover .header-signin-list-element{
+  transition: background-color 500ms ease-in-out;
+  border: 1px solid #FF6E30;
+  background-color: transparent;
+  /*  */
+}
+.header-list-item-signin-first:hover .header-signin-list-element{
+  transition: background-color 500ms ease-in-out;
+  border: 1px solid #FF6E30;
+  background-color: transparent;
+}
+@keyframes scale{
+  0%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1  );
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 /* hero section */
 .hero-section {
@@ -120,9 +172,42 @@ form {
 }
 .hero-list-svg-item {
   fill: #fff;
+  transition: fill 500ms ease;
+}
+@keyframes svg-scale {
+  0% {
+    transform: scale(1);
+    fill: #fff;
+  }
+  50% {
+    transform: scale(1.25);
+    fill: #FF6E30;
+  }
+  100% {
+    transform: scale(1);
+    fill: #fff;
+  }
+}
+.keyframes-first {
+  animation-name: svg-scale;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+.keyframes-second {
+  animation-name: svg-scale;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-delay: 500ms; 
+}
+.keyframes-third {
+  animation-name: svg-scale;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-delay: 1000ms;
 }
 .hero-list-images .hero-list-svg-item:hover {
   fill: #FF6E30;
+  transition: fill 500ms ease;
 }
 /* .search-loop {
 
@@ -196,26 +281,33 @@ form {
 .tools-section-btn-folder {
   background-color: transparent;
   border: none;
-  color: transparent;
+  fill:  rgba(255, 255, 255, 0.38);
 }
 .tools-section-btn-like {
+  fill: rgba(255, 255, 255, 0.38); 
+  padding: 7px;
+  margin-right: 20px;
   background-color: transparent;
   border: none;
+  border-radius: 8px
+}  
+.second-section-list-item:hover .tools-section-btn-like {
+  background-color: #283036;
+}
+.second-section-list-item:hover .like-svg {
+  fill: #fd3b41;
 }
 .second-list-section {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 100px;
-    margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 100px;
+  margin-bottom: 100px;
 }
 .second-section-list-item 
 {
     width: calc((100% - 48px) / 3);
     padding: 32px;
-}
-.tools-section-btn-like-svg {
-  fill: rgba(255, 255, 255, 0.38);
 }
 /* hovers */
 /* section tools */
@@ -232,12 +324,6 @@ form {
   color: #fff;
 }
 /* section newcomer tools */
-.section-tools-list-item:hover {
-  border-radius: 15px;
-  background-image: 
-    linear-gradient(to right, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6)), 
-    radial-gradient(circle at top right, rgba(255, 110, 48, 0.6) 1%, transparent 20%);
-}
 /* .section-tools-list-item:hover .visit-list-link {
   background-color: #FF6E30;
   padding: 9px 35px;
@@ -256,12 +342,20 @@ form {
   font-weight: 500;
   font-size: 20px;
   color: #ff6e30;
+  transition-property: background;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.second-section-btn:hover {
+  background-color: #FF6E30;
+  transition-property: background;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  color: white;
+  
 }
 .p-list-discription {
   margin-bottom: 30px;
-}
-.tools-section-btn-like {
-  margin-right: 20px;
 }
 .visit-list-link {
   margin-left: 124px;
@@ -290,6 +384,16 @@ form {
   font-size: 20px;
   color: #ff6e30;
   background: #1e252b;
+}
+.visit-second-tools-list-link {
+  padding: 9px 35px;
+  margin-left: 43px;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: var(--main--text--color);
 }
 /* section about */
 .section-about {
@@ -389,6 +493,7 @@ form {
 }
 .section-tools-list-item {
   width: calc((100% - 50px) / 2);
+  padding: 28px 22px;
 }
 .ul-tools-wrapper {
   display: flex;
@@ -414,6 +519,8 @@ form {
 }
 .section-ronald-richers-btn {
   border: none;
+  background-color: transparent;
+  stroke: rgba(255, 255, 255, 0.28);
 }
 .slider-color-orange  {
   background-color: #ff6e30;;
@@ -564,8 +671,34 @@ form {
   flex-direction: column;
   gap: 10px; 
 }
-
-
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #5c5c5c;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 500ms ease-in-out;
+}
+.scroll-to-top .icon-arrow-up{
+  width: 26px;
+  height: 28px;
+  fill: #ffa805;
+  transition: fill 500ms ease-in;
+}
+.scroll-to-top:hover {
+  transition: background 500ms ;
+  background: #000000;
+}
+.scroll-to-top:hover .icon-arrow-up{
+  transition: fill 500ms ease-in;
+  fill: #FDF5FF;
+}
 
 
 
